@@ -16,7 +16,7 @@
                 data-target="dropdown"
                 ref="dropdown"
             >
-              USER NAME
+              <b>{{name}}</b>
               <i class="material-icons right">arrow_drop_down</i>
             </a>
 
@@ -38,7 +38,6 @@
       </div>
     </nav>
 </template>
-
 <script>
 export default {
   data: () => ({
@@ -47,10 +46,14 @@ export default {
     dropdown: null,
   }),
   methods: {
-    logout() {
-      console.log('Logout') // forced for test in adress bar (check adress)
+    async logout() {
+      await this.$store.dispatch('logout')
       this.$router.push('/login?message=logout')
-
+    }
+  },
+  computed: {
+    name() {
+      return this.$store.getters.info.name
     }
   },
   mounted(){

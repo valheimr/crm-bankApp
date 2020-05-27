@@ -75,7 +75,7 @@ export default {
     }
   },
   methods: {
-    submitHandler(){
+    async submitHandler(){
       if (this.$v.$invalid) {
         this.$v.$touch()
         return
@@ -85,8 +85,13 @@ export default {
         email: this.email,
         password: this.password
       }
-      console.log(formData)
+
+      try{
+      await this.$store.dispatch('login', formData)
       this.$router.push('/') // if login data is correct then user will be pushed to the main page
+      } catch(e){
+      
+      }
     }
   }
 }
