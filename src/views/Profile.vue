@@ -19,6 +19,7 @@
         >{{'Message_EnterName'|localize}}</small>
       </div>
 
+      <!--
       <div class="switch">
         <label>
           English
@@ -27,8 +28,9 @@
           Русский
         </label>
       </div>
+      -->
 
-      <button class="btn waves-effect waves-light" type="submit">
+      <button class="btn waves-effect waves-light teal lighten-1" type="submit">
         {{'Update'|localize}}
         <i class="material-icons right">send</i>
       </button>

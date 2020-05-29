@@ -1,5 +1,7 @@
 import firebase from 'firebase/app'
-
+/**
+ * Работа с категориями через функционал Firebase
+ */
 export default {
   actions: {
     async fetchCategories({commit, dispatch}) {

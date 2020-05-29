@@ -27,7 +27,9 @@ Vue.filter('currency', currencyFilter)
 Vue.directive('tooltip', tooltipDirective)
 Vue.component('Loader', Loader)
 Vue.component('Paginate', Paginate)
-
+/**
+ * Настройки и инициализация Firebase
+ */
 firebase.initializeApp({
   apiKey: "AIzaSyDhPR7dUGQv1X6Fc6-xVdNgYXgc7B9Knts",
   authDomain: "crm-bank-vuejs-app.firebaseapp.com",
@@ -40,7 +42,9 @@ firebase.initializeApp({
 });
 
 let app
-
+/**
+ * Манипуляции с авторизацией через Firebase
+ */
 firebase.auth().onAuthStateChanged(() => {
   if (!app) {
     app = new Vue({

@@ -1,5 +1,7 @@
 import firebase from 'firebase/app'
-
+/**
+ * Обработка данных с использованием функционала Firebase
+ */
 export default {
   state: {
     info: {}

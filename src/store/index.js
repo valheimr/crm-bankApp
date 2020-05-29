@@ -6,7 +6,9 @@ import category from './category'
 import record from './record'
 
 Vue.use(Vuex)
-
+/**
+ * Установка мутаций, а также инициализация ключа от fixer.io(импорт ключа из .env), необходимого для работы валют, а также ограничение только 3 основных валют и их символов
+ */
 export default new Vuex.Store({
   state: {
     error: null

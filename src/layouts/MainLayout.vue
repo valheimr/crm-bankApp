@@ -14,11 +14,11 @@
 
       <div class="fixed-action-btn">
         <router-link
-          class="btn-floating btn-large blue"
+          class="btn-large teal lighten"
           to="/record"
           v-tooltip="'Создать новую запись'"
         >
-          <i class="large material-icons">add</i>
+          <i class="large material-icons">add_box</i>
         </router-link>
       </div>
     </div>

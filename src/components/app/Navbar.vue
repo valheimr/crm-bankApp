@@ -1,11 +1,11 @@
 <template>
-  <nav class="navbar orange lighten-1">
+  <nav class="navbar teal lighten">
     <div class="nav-wrapper">
       <div class="navbar-left">
         <a href="#" @click.prevent="$emit('click')">
-          <i class="material-icons black-text">dehaze</i>
+          <i class="material-icons black-text">menu</i>
         </a>
-        <span class="black-text">{{date | date('datetime')}}</span>
+        <span class="white-text"><b>{{date | date('datetime')}}</b></span>
       </div>
 
       <ul class="right hide-on-small-and-down">
@@ -16,8 +16,8 @@
               data-target="dropdown"
               ref="dropdown"
           >
-            {{name}}
-            <i class="material-icons right">arrow_drop_down</i>
+            <b class="white-text">{{name}}</b>
+            <i class="material-icons right">expand_more</i>
           </a>
 
           <ul id='dropdown' class='dropdown-content'>

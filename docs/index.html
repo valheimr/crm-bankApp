@@ -1,0 +1,1029 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <title>crm-bank-vuejs-app 0.1.0 | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' rel='stylesheet'>
+  <link href='assets/style.css' rel='stylesheet'>
+  <link href='assets/github.css' rel='stylesheet'>
+  <link href='assets/split.css' rel='stylesheet'>
+</head>
+<body class='documentation m0'>
+    <div class='flex'>
+      <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'>crm-bank-vuejs-app</h3>
+          <div class='mb1'><code>0.1.0</code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            spellcheck='false'
+            autocapitalize='off'
+            autocorrect='off'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+              
+                
+                <li><a
+                  href='#currencyfilter'
+                  class="">
+                  currencyFilter
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#datefilter'
+                  class="">
+                  dateFilter
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#localizefilter'
+                  class="">
+                  localizeFilter
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#initializeapp'
+                  class="">
+                  initializeApp
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#onauthstatechanged'
+                  class="">
+                  onAuthStateChanged
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#paginationmixin'
+                  class="">
+                  pagination.mixin
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#routes'
+                  class="">
+                  routes
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#auth'
+                  class="">
+                  auth
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#category'
+                  class="">
+                  category
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#index'
+                  class="">
+                  index
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#info'
+                  class="">
+                  info
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#record'
+                  class="">
+                  record
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#messageplugin'
+                  class="">
+                  message.plugin
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#install'
+                  class="">
+                  install
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#messages'
+                  class="">
+                  messages
+                  
+                </a>
+                
+                </li>
+              
+            </ul>
+          </div>
+          <div class='mt1 h6 quiet'>
+            <a href='https://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+          </div>
+        </div>
+      </div>
+      <div id='split-right' class='relative overflow-auto height-viewport-100'>
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='currencyfilter'>
+      currencyFilter
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Экспорт функции фильтра валюты</p>
+
+    <div class='pre p1 fill-light mt0'>currencyFilter(value: int, currency: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol">symbol</a>): Intl.NumberFormat</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>value</span> <code class='quiet'>(int)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>currency</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol">symbol</a>
+            = <code>&#39;EUR&#39;</code>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>Intl.NumberFormat</code>:
+        
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='datefilter'>
+      dateFilter
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Экспорт функции фильтра даты</p>
+
+    <div class='pre p1 fill-light mt0'>dateFilter(value: int, format: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date">Date</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>value</span> <code class='quiet'>(int)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>format</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date">Date</a>
+            = <code>&#39;date&#39;</code>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='localizefilter'>
+      localizeFilter
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Экспорт функции локализации(Смена языка в профиле, свитч-функция недоработана)</p>
+
+    <div class='pre p1 fill-light mt0'>localizeFilter(key: str)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>key</span> <code class='quiet'>(str)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='initializeapp'>
+      initializeApp
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Настройки и инициализация Firebase</p>
+
+    <div class='pre p1 fill-light mt0'>initializeApp</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='onauthstatechanged'>
+      onAuthStateChanged
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Манипуляции с авторизацией через Firebase</p>
+
+    <div class='pre p1 fill-light mt0'>onAuthStateChanged</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='paginationmixin'>
+      pagination.mixin
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Дефолт-экспорт пагинации</p>
+
+    <div class='pre p1 fill-light mt0'>pagination.mixin</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='routes'>
+      routes
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Работа с роутами, а также их защитой в main Layot'e через параметр auth (Firebase) в meta</p>
+
+    <div class='pre p1 fill-light mt0'>routes</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='auth'>
+      auth
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Аутентификация через э-почту и пароль, а также регистрация таким же образом</p>
+
+    <div class='pre p1 fill-light mt0'>auth</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='category'>
+      category
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Работа с категориями через функционал Firebase</p>
+
+    <div class='pre p1 fill-light mt0'>category</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='index'>
+      index
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Установка мутаций, а также инициализация ключа от fixer.io(импорт ключа из .env), необходимого для работы валют, а также ограничение только 3 основных валют и их символов</p>
+
+    <div class='pre p1 fill-light mt0'>index</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='info'>
+      info
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Обработка данных с использованием функционала Firebase</p>
+
+    <div class='pre p1 fill-light mt0'>info</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='record'>
+      record
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Работа с записями с использованием функционала Firebase</p>
+
+    <div class='pre p1 fill-light mt0'>record</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='messageplugin'>
+      message.plugin
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Ручной плагин для вывода сообщений</p>
+
+    <div class='pre p1 fill-light mt0'>message.plugin</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='install'>
+      install
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>install(Vue: any, options: any)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>Vue</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>options</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='messages'>
+      messages
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Хранилище пояснений для исходящих ошибок разного рода</p>
+
+    <div class='pre p1 fill-light mt0'>messages</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+      </div>
+    </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/split.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>

@@ -1,4 +1,7 @@
 import firebase from 'firebase/app'
+/**
+ * Аутентификация через э-почту и пароль, а также регистрация таким же образом
+ */
 export default{
   actions: {
     async login({dispatch, commit}, {email, password}) {

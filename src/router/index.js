@@ -3,7 +3,9 @@ import VueRouter from 'vue-router'
 import firebase from 'firebase/app'
 
 Vue.use(VueRouter)
-
+/**
+ * Работа с роутами, а также их защитой в main Layot'e через параметр auth (Firebase) в meta
+ */
 const routes = [
   {
     path: '/login',

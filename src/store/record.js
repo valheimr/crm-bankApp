@@ -1,5 +1,7 @@
 import firebase from 'firebase/app'
-
+/**
+ * Работа с записями с использованием функционала Firebase
+ */
 export default {
   actions: {
     async createRecord({dispatch, commit}, record) {

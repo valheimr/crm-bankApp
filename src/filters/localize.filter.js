@@ -6,6 +6,10 @@ const locales = {
   'ru-RU': ru,
   'en-US': en
 }
+/**
+ * Экспорт функции локализации(Смена языка в профиле, свитч-функция недоработана)
+ * @param {str} key 
+ */
 export default function localizeFilter(key) {
   const locale = store.getters.info.locale || 'ru-RU'
   return locales[locale][key] || `[Localize error]: key ${key} not found`

@@ -1,3 +1,8 @@
+/**
+ * Экспорт функции фильтра даты
+ * @param {int} value 
+ * @param {Date} format 
+ */
 export default function dateFilter(value, format = 'date') {
   const options = {}
 
